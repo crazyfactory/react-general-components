@@ -1,8 +1,8 @@
 /**
- * Type declerations for global development variables
+ * Type declarations for global development variables
  */
 
-// tslint:disable:interface-name
+/* eslint-disable @typescript-eslint/interface-name-prefix */
 
 interface Window {
   // A hack for the Redux DevTools Chrome extension.
