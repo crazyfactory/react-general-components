@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "lib",
     "module": "commonjs",
     "target": "es5",
     "lib": ["es5", "scripthost", "dom", "es2015"],
@@ -14,8 +14,14 @@
     "moduleResolution": "node",
     "esModuleInterop": true
   },
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules",
-    "build"
+    "lib",
+    "jest",
+    "**/*.test.ts*",
+    "**/*.stories.ts*"
   ]
 }

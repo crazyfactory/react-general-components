@@ -177,31 +177,9 @@ module.exports = {
     "browser": true,
     "node": true
   },
-  "overrides": [
-    {
-      "files": ["*.stories.tsx"],
-      "rules": {
-        "@typescript-eslint/tslint/config": [
-          "error",
-          {
-            "rulesDirectory": [
-              "node_modules/tslint-react/rules",
-              "node_modules/tslint-microsoft-contrib",
-              "node_modules/@crazyfactory/tslint-rules/lib"
-            ],
-            "rules": {
-              ...tslintRules,
-              "jsx-no-lambda": false,
-              "react-this-binding-issue": false,
-            }
-          }
-        ]
-      }
-    }
-  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json",
+    "project": "tsconfig.eslint.json",
     "sourceType": "module"
   },
   "plugins": [
@@ -338,5 +316,27 @@ module.exports = {
         "rules": tslintRules
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": "*.stories.tsx",
+      "rules": {
+        "@typescript-eslint/tslint/config": [
+          "error",
+          {
+            "rulesDirectory": [
+              "node_modules/tslint-react/rules",
+              "node_modules/tslint-microsoft-contrib",
+              "node_modules/@crazyfactory/tslint-rules/lib"
+            ],
+            "rules": {
+              ...tslintRules,
+              "jsx-no-lambda": false,
+              "react-this-binding-issue": false,
+            }
+          }
+        ]
+      }
+    }
+  ],
 };
