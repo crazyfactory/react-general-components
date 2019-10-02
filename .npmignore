@@ -1,0 +1,15 @@
+.awcache
+.vscode
+__mocks__
+config
+coverage
+node_modules
+src
+.dockerignore
+.editorconfig
+.gitignore
+.gitattributes
+.npmignore
+.travis.yml
+Dockerfile
+wallaby.conf.js
