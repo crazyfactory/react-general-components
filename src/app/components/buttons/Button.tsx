@@ -1,6 +1,6 @@
+import {Color} from "@crazyfactory/frontend-commons";
 import * as React from "react";
 import {classes, stylesheet} from "typestyle";
-import {Color} from "../constants/Color";
 
 const classNames = stylesheet({
   button: {

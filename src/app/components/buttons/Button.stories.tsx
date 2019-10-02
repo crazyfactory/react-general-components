@@ -1,5 +1,5 @@
+import {Color} from "@crazyfactory/frontend-commons";
 import * as React from "react";
-import {Color} from "../constants";
 import {Button} from "./Button";
 
 export default {
