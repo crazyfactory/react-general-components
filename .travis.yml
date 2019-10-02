@@ -20,8 +20,8 @@ before_script: greenkeeper-lockfile-update
 script:
   - npm run lint
   - npm run build
-  - npm run build:prod
-  - npm run test:no-cache -- --maxWorkers=4
+  - npm run test -- --no-cache --maxWorkers=4
+  - npm run doc
 
 after_script: greenkeeper-lockfile-upload
 
