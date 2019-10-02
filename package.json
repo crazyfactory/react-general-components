@@ -95,7 +95,7 @@
       "./"
     ],
     "setupFilesAfterEnv": [
-      "./src/app/helpers/JestBootstrap.ts"
+      "./src/helpers/JestBootstrap.ts"
     ]
   }
 }
