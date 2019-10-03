@@ -13,3 +13,4 @@ src
 .travis.yml
 Dockerfile
 wallaby.conf.js
+storybook

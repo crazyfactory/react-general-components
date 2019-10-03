@@ -26,6 +26,7 @@ after_script: greenkeeper-lockfile-upload
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - ./doc/documentation.sh
 
 jobs:
   include:
