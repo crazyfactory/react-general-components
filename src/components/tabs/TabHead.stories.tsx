@@ -1,13 +1,13 @@
 import * as React from "react";
-import {Row} from "./Row";
+import {TabHead} from "./TabHead";
 
 export default {
-  component: Row,
-  title: "Row"
+  component: TabHead,
+  title: "TabHead"
 };
 
 export const Normal = () => (
   <div>
-    See Col doc
+    See TabsContainer doc
   </div>
 );
