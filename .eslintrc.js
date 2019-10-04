@@ -273,7 +273,7 @@ module.exports = {
     "no-extra-semi": "error",
     "no-fallthrough": "off",
     "no-invalid-regexp": "error",
-    "no-invalid-this": "error",
+    "no-invalid-this": "off",
     "no-multi-str": "off",
     "no-multiple-empty-lines": "error",
     "no-new-func": "error",
@@ -332,6 +332,7 @@ module.exports = {
             "rules": {
               ...tslintRules,
               "jsx-no-lambda": false,
+              "jsx-no-multiline-js": false,
               "react-this-binding-issue": false,
             }
           }

@@ -4,7 +4,7 @@ import {TabsContainer} from "./TabsContainer";
 export default {
   component: TabsContainer,
   title: "TabsContainer"
-}
+};
 
 export const Normal = () => (
   <TabsContainer

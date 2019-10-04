@@ -5,7 +5,7 @@ import {NumberSelector} from "./NumberSelector";
 export default {
   component: NumberSelector,
   title: "NumberSelector"
-}
+};
 
 export const Normal = ({state, setState}) => (
   <NumberSelector value={state.value} onChange={(value) => setState({value})}/>
@@ -18,5 +18,5 @@ export const WithSomeProps = ({state, setState}) => (
   <NumberSelector max={1000} min={100} value={state.value} onChange={(value) => setState({value})} step={10}/>
 );
 WithSomeProps.story = {
-  decorators: [withInitialState({value: 100})],
+  decorators: [withInitialState({value: 100})]
 };
