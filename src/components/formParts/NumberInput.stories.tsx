@@ -10,7 +10,6 @@ export default {
 export const Normal = ({state, setState}) => (
   <NumberInput value={state.value} onChange={(value) => setState({value})}/>
 );
-
 Normal.story = {
   decorators: [withInitialState({value: 0})]
 };
