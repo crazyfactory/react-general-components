@@ -4,7 +4,7 @@ import {Select} from "./Select";
 export default {
   component: Select,
   title: "Select"
-}
+};
 
 export const Simple = () => (
   <Select
