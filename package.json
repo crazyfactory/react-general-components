@@ -65,8 +65,10 @@
   },
   "dependencies": {
     "@crazyfactory/frontend-commons": "^1.4.1",
+    "@types/react-modal": "^3.8.3",
     "autobind-decorator": "^2.4.0",
     "prop-types": "^15.7.2",
+    "react-modal": "^3.10.1",
     "typestyle": "^2.0.4"
   },
   "peerDependencies": {
