@@ -13,6 +13,7 @@
     "lint:fix": "npm run lint -s -- --fix",
     "doc": "start-storybook -p 6060",
     "doc:build": "build-storybook -o storybook",
+    "doc:publish": "node ./doc/publish.js",
     "prepublish": "npm run clean && npm run build"
   },
   "author": "Crazy Factory <dev@crazy-factory.com>",
