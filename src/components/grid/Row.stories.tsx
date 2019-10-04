@@ -6,7 +6,7 @@ export default {
   title: "Row"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <div>
     See Col doc
   </div>

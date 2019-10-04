@@ -7,7 +7,7 @@ export default {
   title: "Checkbox"
 };
 
-export const Normal = ({state, setState}) => (
+export const Simple = ({state, setState}) => (
   <Checkbox
     checked={state.checked}
     onChange={(checked) => setState({checked})}
@@ -16,6 +16,6 @@ export const Normal = ({state, setState}) => (
   </Checkbox>
 );
 
-Normal.story = {
+Simple.story = {
   decorators: [withInitialState({checked: false})]
 };

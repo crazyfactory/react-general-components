@@ -6,7 +6,7 @@ export default {
   title: "TransparentButton"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <TransparentButton
     onClick={(uniqueId) => console.info(`${uniqueId} removed!`)}
     uniqueId={1}

@@ -7,10 +7,10 @@ export default {
   title: "NumberSelector"
 };
 
-export const Normal = ({state, setState}) => (
+export const Simple = ({state, setState}) => (
   <NumberSelector value={state.value} onChange={(value) => setState({value})}/>
 );
-Normal.story = {
+Simple.story = {
   decorators: [withInitialState({value: 1})]
 };
 

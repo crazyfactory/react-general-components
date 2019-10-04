@@ -7,9 +7,9 @@ export default {
   title: "NumberInput"
 };
 
-export const Normal = ({state, setState}) => (
+export const Simple = ({state, setState}) => (
   <NumberInput value={state.value} onChange={(value) => setState({value})}/>
 );
-Normal.story = {
+Simple.story = {
   decorators: [withInitialState({value: 0})]
 };

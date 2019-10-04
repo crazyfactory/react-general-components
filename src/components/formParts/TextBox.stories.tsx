@@ -7,10 +7,10 @@ export default {
   title: "TextBox"
 };
 
-export const Normal = ({state, setState}) => (
+export const Simple = ({state, setState}) => (
   <TextBox value={state.value} onChange={(text) => setState({value: text})}/>
 );
-Normal.story = {
+Simple.story = {
   decorators: [withInitialState({value: ""})]
 };
 

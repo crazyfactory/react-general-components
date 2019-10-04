@@ -6,6 +6,6 @@ export default {
   title: "UploadButton"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <UploadButton translations={{chooseFile: "Choose file"}}/>
 );

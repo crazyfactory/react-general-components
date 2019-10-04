@@ -7,7 +7,7 @@ export default {
   title: "Col"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <Row style={{height: 50}}>
     <Col style={{border: "1px solid red"}} md={6} lg={2}>md-6 / lg-2</Col>
     <Col style={{border: "1px solid blue"}} md={4}>md-4</Col>

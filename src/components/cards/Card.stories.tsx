@@ -6,6 +6,6 @@ export default {
   title: "Card"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <Card>This is the card</Card>
 );

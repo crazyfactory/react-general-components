@@ -6,6 +6,6 @@ export default {
   title: "CloseButton"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <CloseButton onClick={() => console.info("clicked!")}/>
 );

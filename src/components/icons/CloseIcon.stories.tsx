@@ -6,6 +6,6 @@ export default {
   title: "CloseIcon"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <CloseIcon/>
 );

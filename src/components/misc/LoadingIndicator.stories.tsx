@@ -6,6 +6,6 @@ export default {
   title: "LoadingIndicator"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <LoadingIndicator/>
 );

@@ -7,7 +7,7 @@ export default {
   title: "Modal"
 };
 
-export const Normal = ({state, setState}) => (
+export const Simple = ({state, setState}) => (
   <div>
     <span onClick={() => setState({isOpen: true})} style={{cursor: "pointer"}}>
       Click to open Modal
@@ -20,6 +20,6 @@ export const Normal = ({state, setState}) => (
     </Modal>
   </div>
 );
-Normal.story = {
+Simple.story = {
   decorators: [withInitialState({isOpen: false})]
 };

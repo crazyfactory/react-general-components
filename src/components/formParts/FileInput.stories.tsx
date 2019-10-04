@@ -6,6 +6,6 @@ export default {
   title: "FileInput"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <FileInput translations={{chooseFile: "Choose File"}}/>
 );

@@ -6,7 +6,7 @@ export default {
   title: "TabHead"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <div>
     See TabsContainer doc
   </div>

@@ -6,7 +6,7 @@ export default {
   title: "TabsContainer"
 };
 
-export const Normal = () => (
+export const Simple = () => (
   <TabsContainer
     tabs={[
       {

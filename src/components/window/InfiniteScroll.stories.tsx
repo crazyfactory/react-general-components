@@ -7,7 +7,7 @@ export default {
   title: "InfiniteScroll"
 };
 
-export const Normal = ({state, setState}) => (
+export const Simple = ({state, setState}) => (
   <InfiniteScroll
     hasMore={state.hasMore}
     isLoading={state.isLoading}
@@ -34,7 +34,7 @@ export const Normal = ({state, setState}) => (
     {state.isLoading && <div>Loading...</div>}
   </InfiniteScroll>
 );
-Normal.story = {
+Simple.story = {
   decorators: [withInitialState({
     count: 1,
     hasMore: true,
