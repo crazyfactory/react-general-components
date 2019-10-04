@@ -1,0 +1,42 @@
+language: node_js
+
+node_js:
+  - "10"
+
+env:
+  - NODE_ENV=ci
+
+cache:
+  directories:
+  - node_modules
+
+before_install:
+  - npm install -g greenkeeper-lockfile@1
+install:
+  - npm install
+
+before_script: greenkeeper-lockfile-update
+
+script:
+  - npm run lint
+  - npm run build
+  - npm run test -- --no-cache --maxWorkers=4
+
+after_script: greenkeeper-lockfile-upload
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  - ./doc/documentation.sh
+
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
