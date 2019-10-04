@@ -1,7 +1,7 @@
 import {Color} from "@crazyfactory/frontend-commons";
 import * as React from "react";
 import {classes, stylesheet} from "typestyle";
-import {CloseIcon} from "../..";
+import {CloseIcon} from "../icons/CloseIcon";
 
 const classNames = stylesheet({
   button: {

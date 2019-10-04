@@ -14,7 +14,8 @@
     "doc": "start-storybook -p 6060",
     "doc:build": "build-storybook -o storybook",
     "doc:publish": "node ./doc/publish.js",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run clean && npm run build",
+    "genindex": "node ./genIndex.js"
   },
   "author": "Crazy Factory <dev@crazy-factory.com>",
   "homepage": "https://github.com/crazyfactory/react-general-components",
