@@ -8,17 +8,6 @@ describe("<Radio/>", () => {
     expect(Radio.defaultProps.activeColor).toBe(Color.BLUE);
   });
 
-  it("assigns id prop to radio's id and label's htmlFor", () => {
-    const wrapper = shallow(<Radio id="radio" label="label" name="name" value="value"/>);
-    expect(wrapper.find("input[type='radio']")).toHaveProp("id", "radio");
-    expect(wrapper.find("label")).toHaveProp("htmlFor", "radio");
-  });
-
-  it("assigns label prop to label's inner html", () => {
-    const wrapper = shallow(<Radio id="radio" label="label" name="name" value="value"/>);
-    expect(wrapper.find("label").text()).toBe("label");
-  });
-
   it("assigns name prop to radio's name", () => {
     const wrapper = shallow(<Radio id="radio" label="label" name="name" value="value"/>);
     expect(wrapper.find("input")).toHaveProp("name", "name");
