@@ -6,7 +6,7 @@ import {RadioGroup} from "./RadioGroup";
 export default {
   component: RadioGroup,
   title: "RadioGroup"
-}
+};
 
 export const Simple = ({state, setState}) => (
   <div>
@@ -18,7 +18,7 @@ export const Simple = ({state, setState}) => (
         <Radio name="gender" value="female" label="female" id="radio-gender-female"/>
       </p>
       <p>
-        <Radio name="gender" value="other" label="other" id="radio-gender-other" />
+        <Radio name="gender" value="other" label="other" id="radio-gender-other"/>
       </p>
     </RadioGroup>
     Selected: {state.selected}
