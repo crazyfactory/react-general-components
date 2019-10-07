@@ -32,7 +32,7 @@ describe("<RadioGroup/>", () => {
     const mockFn = jest.fn();
     const wrapper = shallow(<RadioGroup onChange={mockFn}/>);
     expect(mockFn).not.toHaveBeenCalled();
-    wrapper.simulate("change");
+    wrapper.simulate("change", {target: {}});
     expect(mockFn).toHaveBeenCalled();
   });
 

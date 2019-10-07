@@ -9,25 +9,25 @@ describe("<Radio/>", () => {
   });
 
   it("assigns name prop to radio's name", () => {
-    const wrapper = shallow(<Radio id="radio" label="label" name="name" value="value"/>);
+    const wrapper = shallow(<Radio name="name" value="value"/>);
     expect(wrapper.find("input")).toHaveProp("name", "name");
   });
 
   it("assigns value prop to radio's value", () => {
-    const wrapper = shallow(<Radio id="radio" label="label" name="name" value="value"/>);
+    const wrapper = shallow(<Radio name="name" value="value"/>);
     expect(wrapper.find("input")).toHaveProp("value", "value");
   });
 
   it("assigns labelClassName prop to label's className", () => {
     const wrapper = shallow(
-      <Radio id="radio" label="label" name="name" value="value" labelClassName="dummyClass"/>
+      <Radio name="name" value="value" labelClassName="dummyClass"/>
     );
     expect(wrapper.find("label")).toHaveClassName("dummyClass");
   });
 
   it("assigns labelStyle prop to label's style", () => {
     const wrapper = shallow(
-      <Radio id="radio" label="label" name="name" value="value" labelStyle={{color: Color.LIGHT_BLUE}}/>
+      <Radio name="name" value="value" labelStyle={{color: Color.LIGHT_BLUE}}/>
     );
     expect(wrapper.find("label")).toHaveStyle("color", Color.LIGHT_BLUE);
   });
