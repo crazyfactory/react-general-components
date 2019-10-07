@@ -10,15 +10,15 @@ export default {
 
 export const Simple = ({state, setState}) => (
   <div>
-    <RadioGroup onChange={(e) => setState({selected: e.target.value})}>
+    <RadioGroup onChange={(selected) => setState({selected})}>
       <p>
-        <Radio name="gender" value="male" label="male" id="radio-gender-male"/>
+        <Radio name="gender" value="male" checked={state.selected === "male"}>Male</Radio>
       </p>
       <p>
-        <Radio name="gender" value="female" label="female" id="radio-gender-female"/>
+        <Radio name="gender" value="female" checked={state.selected === "female"}>Female</Radio>
       </p>
       <p>
-        <Radio name="gender" value="other" label="other" id="radio-gender-other"/>
+        <Radio name="gender" value="other" checked={state.selected === "other"}>Other</Radio>
       </p>
     </RadioGroup>
     Selected: {state.selected}
@@ -32,34 +32,16 @@ export const LargeRadioGroupFemalePreselected = ({state, setState}) => (
   <div>
     <RadioGroup
       elementSize={"2rem"}
-      onChange={(e) => { setState({selected: e.target.value}); }}
+      onChange={(selected) => setState({selected})}
     >
       <p>
-        <Radio
-          name="gender-xlarge"
-          value="male"
-          label="male"
-          id="radio-gender-male-xlarge"
-          defaultChecked={state.selected === "male"}
-        />
+        <Radio name="gender-xlarge" value="male" checked={state.selected === "male"}>Male</Radio>
       </p>
       <p>
-        <Radio
-          name="gender-xlarge"
-          value="female"
-          label="female"
-          id="radio-gender-female-xlarge"
-          defaultChecked={state.selected === "female"}
-        />
+        <Radio name="gender-xlarge" value="female" checked={state.selected === "female"}>Female</Radio>
       </p>
       <p>
-        <Radio
-          name="gender-xlarge"
-          value="other"
-          label="other"
-          id="radio-gender-other-xlarge"
-          defaultChecked={state.selected === "other"}
-        />
+        <Radio name="gender-xlarge" value="other" checked={state.selected === "other"}>Other</Radio>
       </p>
     </RadioGroup>
     Selected: {state.selected}

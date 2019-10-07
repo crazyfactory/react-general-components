@@ -1,9 +1,9 @@
 import * as React from "react";
 
 export interface IProps {
-  onChange?: (e: React.ChangeEvent<HTMLDivElement & HTMLInputElement>) => void;
   className?: string;
   elementSize?: string | number;
+  onChange: (value: string) => void;
   style?: React.CSSProperties;
 }
 
@@ -36,7 +36,7 @@ export class RadioGroup extends React.Component<IProps> {
 
   private handleChange(e: React.ChangeEvent<HTMLDivElement & HTMLInputElement>): void {
     if (this.props.onChange) {
-      this.props.onChange(e);
+      this.props.onChange(e.target.value);
     }
   }
 }

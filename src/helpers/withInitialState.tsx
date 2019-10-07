@@ -17,8 +17,13 @@ export function withInitialState(initialState: any): (
   context: any
 ) => JSX.Element {
   return (story, context) => (
-    <Stage initialState={initialState}>
-      {renderChildrenFn(story, context)}
-    </Stage>
+    <>
+      <Stage initialState={initialState}>
+        {renderChildrenFn(story, context)}
+      </Stage>
+      <div style={{backgroundColor: "#eee", marginTop: 30, maxWidth: 500, overflowX: "auto", padding: 10}}>
+        initialState: {JSON.stringify(initialState)}
+      </div>
+    </>
   );
 }
