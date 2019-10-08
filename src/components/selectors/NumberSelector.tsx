@@ -2,7 +2,7 @@ import {Color, CommonCss} from "@crazyfactory/frontend-commons";
 import autobind from "autobind-decorator";
 import * as React from "react";
 import {stylesheet} from "typestyle";
-import {NumberInput} from "../formParts/NumberInput";
+import {NumberInput} from "../formControls/NumberInput";
 
 const classNames = stylesheet({
   button: {
