@@ -19,3 +19,4 @@ Requires react ^16.8.0 as peer dependency.
 - No need to export it at root folder, `genindex` script will do the work
 - No need to manually release, we use [semantic-release](https://github.com/semantic-release/semantic-release/). It will
 release package based on commit message.
+- No need to manually publish documentation at Github Page, `doc:publish` script will do the work.
