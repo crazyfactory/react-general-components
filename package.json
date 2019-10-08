@@ -77,7 +77,7 @@
     "typestyle": "^2.0.4"
   },
   "peerDependencies": {
-    "react": "^16.1.1"
+    "react": "^16.8.0"
   },
   "husky": {
     "hooks": {
