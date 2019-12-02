@@ -65,7 +65,7 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "@crazyfactory/frontend-commons": "^1.4.1",
+    "@crazyfactory/frontend-commons": "^2.0.1",
     "@types/react-modal": "^3.8.3",
     "@types/react-select": "^3.0.5",
     "autobind-decorator": "^2.4.0",
